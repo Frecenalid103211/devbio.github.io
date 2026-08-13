@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain It On! — Level Engineering Suite</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#home">Brain It On! - Engineering Project <span class="site-version">v3.4</span></a>
+
+  <nav class="nav">
+    <a href="#faq">FAQ</a>
+    <a href="#how-to-use">HOW TO USE</a>
+    <a href="#story">THE STORY</a>
+    <a href="#contributors">CONTRIBUTORS</a>
+
+    <div class="create-wrap">
+      <button class="create-btn" id="createBtn">
+        <span>+</span> CREATE THE PROJECT
+      </button>
+
+      <div class="project-menu" id="projectMenu">
+        <a href="projects/live-art-studio.html" target="_blank">
+          <strong>Live Art Studio</strong>
+          <small>UP TO 200×200 PIXELS</small>
+        </a>
+        <a href="projects/matrix-modifier.html" target="_blank">
+          <strong>Matrix Modifier</strong>
+        </a>
+        <a href="projects/rich-text-title-injector.html" target="_blank">
+          <strong>Rich Text Title Injector</strong>
+          <small>A LOT OF DIFFERENT TYPES</small>
+        </a>
+        <a href="projects/outside-the-walls.html" target="_blank">
+          <strong>Outside the Walls</strong>
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="blueprint">
+      <p class="eyebrow">WELCOME TO</p>
+      <h1>BRAIN IT ON!</h1>
+      <h2>Level Engineering Suite</h2>
+      <p>
+        A reverse-engineering project exploring hidden functions,
+        features, properties, modifiers, indexes and more.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="faq">
+    <p class="eyebrow">01 / FAQ</p>
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="accordion">
+      <details>
+        <summary>What is this project?</summary>
+        <p>
+          The Reverse Engineering - Brain It On! Project is about hidden
+          functions, features, and properties like modifiers, object scaling,
+          indexes, and more. The project was started before we cracked the
+          code, and we conducted in-depth research to understand and perfect it.
+        </p>
+      </details>
+
+      <details>
+        <summary>Why was this project created?</summary>
+        <p>
+          Regarding the Basemented story, we're kind of suspicious about how
+          it was created and how it works. That's why we're digging deeper
+          into it, testing different ideas, and experimenting until we can
+          get it working as perfectly as possible.
+        </p>
+      </details>
+
+      <details>
+        <summary>Did the developer/owner of Brain It On! approve these features?</summary>
+        <p>
+          Yes. The developer/owner has accepted these features, but they
+          should be used with limitations.
+        </p>
+      </details>
+
+      <details>
+        <summary>What are the limitations of these experiments?</summary>
+        <p>
+          These experiments can have a significant impact on the gameplay
+          experience. Once a trick becomes known, many people may ask for it,
+          try to use it, or demand access to it. If these features are used too
+          widely, they could potentially disrupt the game or negatively affect
+          the experience for everyone. For that reason, some experiments should
+          be used carefully and kept limited.
+        </p>
+      </details>
+    </div>
+  </section>
+
+  <section class="section" id="how-to-use">
+    <p class="eyebrow">02 / HOW TO USE</p>
+    <h2>How to Use</h2>
+
+    <div class="how-box">
+      <div class="how-text">
+        <div class="how-project">
+          <h3>Live Art Studio</h3>
+          <p>Step 1: Open the Live Art Studio project.</p>
+          <p>Step 2: Choose your pixel that you like and create your drawing inside the pixel area.</p>
+          <p>Step 3: Export or apply the result to your level.</p>
+        </div>
+
+        <div class="how-project">
+          <h3>Matrix Modifier</h3>
+          <p>Step 1: Open the Matrix Modifier project.</p>
+          <p>Step 2: Enter the values you want to modify.</p>
+          <p>Step 3: Apply the generated matrix data.</p>
+        </div>
+
+        <div class="how-project">
+          <h3>Rich Text Title Injector</h3>
+          <p>Step 1: Choose a title type.</p>
+          <p>Step 2: Enter your text and formatting.</p>
+          <p>Step 3: Generate the title data.</p>
+        </div>
+
+        <div class="how-project">
+          <h3>Outside the Walls</h3>
+          <p>Step 1: Select the object and map location.</p>
+          <p>Step 2: Drag the object in 1/4-grid increments.</p>
+          <p>Step 3: Generate the code and copy the layout.</p>
+        </div>
+      </div>
+
+      <div class="how-diagram" aria-label="Instruction diagram">
+        <div class="diagram-object"></div>
+        <div class="diagram-circle"></div>
+        <div class="diagram-ground"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="story">
+    <p class="eyebrow">03 / THE STORY</p>
+    <h2>The Story</h2>
+    <div class="story-box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+        euismod, nisl eget consectetur sagittis, nisl nunc convallis nisi,
+        eget aliquam nisl nisl id nisl.
+      </p>
+      <p>
+        This section is currently a placeholder while the researchers
+        build and investigate the story.
+      </p>
+    </div>
+  </section>
+
+  <section class="section contributors" id="contributors">
+    <p class="eyebrow">04 / CONTRIBUTORS</p>
+    <h2>Contributors</h2>
+
+    <div class="pyramid">
+      <button class="person rank1" data-rank="01" data-name="Magnetic42" data-bio="Magnetic42 is the backbone; all base code is his, including the break code and deep searching. He also found out how the code decompresses into various characteristics of the level and modifiers for the objects.">
+        <span>01</span><strong>Magnetic42</strong>
+      </button>
+
+      <button class="person rank2" data-rank="02" data-name="ItsTheta07" data-bio="Theta built the website and did a lot of work, finding the best idea to add to the link and updating the concise log of the updates.">
+        <span>02</span><strong>ItsTheta07</strong>
+      </button>
+      <button class="person rank3" data-rank="03" data-name="Rembeoride" data-bio="Rembeoride is the boss; after the strange events on the Basemented level recently, he was sure there was a code to break the level and called all the trusted people to find out the secret of Basemented&#x27;s level.">
+        <span>03</span><strong>Rembeoride</strong>
+      </button>
+
+      <button class="person rank4" data-rank="04" data-name="Govlin65" data-bio="Govlin65 is the destroyer of the level. Erm, actually, he cracked some parts of the level, researched thoroughly, and identified key features to pay attention to. Back then, Govlin65 also had admin powers, so he created some unreal designs, or is it?">
+        <span>04</span><strong>Govlin65</strong>
+      </button>
+      <button class="person rank5" data-rank="05" data-name="nato-pez" data-bio="Nato-pez is a suggestor and is thinking of an idea; he also finds some bugs and reports them to the boss and the coder to fix errors in the Engineering Site.">
+        <span>05</span><strong>nato-pez</strong>
+      </button>
+      <button class="person rank6" data-rank="06" data-name="83FrU235" data-bio="83FrU235 is just useless. NOPE, he is the foundation of Rich Text and Broken Text Encyclopedia, and also suggests new ideas and reports bugs just like Nato-pez.">
+        <span>06</span><strong>83FrU235</strong>
+      </button>
+    </div>
+
+    <p class="contributor-note">Click a contributor to view their contribution.</p>
+  </section>
+</main>
+
+<div class="modal" id="contributorModal">
+  <div class="modal-card">
+    <button class="close" id="closeModal">×</button>
+    <p class="eyebrow" id="modalRank"></p>
+    <h2 id="modalName"></h2>
+    <p id="modalBio">Contributor information will be added here.</p>
+  </div>
+</div>
+
+<footer>
+  <span>Brain It On! — Level Engineering Suite</span>
+  <span>Reverse Engineering / Research / Experiments</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

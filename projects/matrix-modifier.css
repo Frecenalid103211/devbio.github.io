@@ -1,0 +1,82 @@
+*{box-sizing:border-box}body{margin:0;background:#101216;color:#f1f3f5;font-family:Arial,sans-serif}.page{width:min(1100px,calc(100% - 40px));margin:auto;padding:30px 0}header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}header small{opacity:.5;letter-spacing:1.5px}h1{margin:5px 0}header a{color:white;text-decoration:none;border:1px solid #333;padding:9px 13px;border-radius:7px}.layout{display:grid;grid-template-columns:1fr 420px;gap:24px}.panel{background:#191c21;border:1px solid #30343b;border-radius:12px;padding:22px}label{display:block;margin:18px 0 7px;opacity:.7;font-size:13px}label:first-child{margin-top:0}select,input[type=number]{width:100%;height:44px;background:#242830;color:#fff;border:1px solid #3b4048;border-radius:7px;padding:0 12px;font:inherit}.hidden{display:none}#num,#rot,#xy{margin-top:8px}#num span{display:block;font-size:11px;opacity:.5;margin-top:5px}#rot{display:none;gap:12px;align-items:center} #rot:not(.hidden){display:flex}#rotation{flex:1;accent-color:#00d2ff}#rotv{width:55px}.xy{display:flex!important;gap:12px}.xy div{flex:1}.summary{margin-top:28px;padding:14px;background:#14171b;border-radius:8px;display:grid;grid-template-columns:auto 1fr;gap:10px;font-size:13px}.summary span{text-align:right;overflow-wrap:anywhere}.summary b{opacity:.5} .preview{display:flex;flex-direction:column;min-width:0}
+.preview>select{margin-bottom:16px}
+.preview-stage{
+    position:relative;
+    width:100%;
+    aspect-ratio:1;
+    background:#0d1116;
+    border:1px solid #343941;
+    overflow:hidden;
+}
+.preview-stage canvas{
+    display:block;
+    width:100%;
+    height:100%;
+}
+.preview p{font-size:12px;opacity:.5;line-height:1.5}
+@media(max-width:800px){.layout{grid-template-columns:1fr}}
+/* Matrix Modifier numeric factor fields */
+#number, #x, #y {
+    color: #c9ced6;
+    caret-color: #25d8ff;
+}
+#number:focus, #x:focus, #y:focus {
+    color: #e1e5ea;
+}
+#number::selection, #x::selection, #y::selection {
+    background: rgba(0,210,255,.25);
+}
+
+/* Fix: decimal text inputs must use the same dark UI as the other controls. */
+#number, #x, #y {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    background: #242830 !important;
+    color: #c9ced6 !important;
+    -webkit-text-fill-color: #c9ced6 !important;
+    border: 1px solid #3b4048;
+    border-radius: 7px;
+    padding: 0 12px;
+    font: inherit;
+    outline: none;
+}
+#number:focus, #x:focus, #y:focus {
+    background: #242830 !important;
+    color: #e1e5ea !important;
+    -webkit-text-fill-color: #e1e5ea !important;
+    border-color: #555d68;
+}
+
+.copy-toast{
+    min-height:20px;
+    margin-top:8px;
+    color:#7ee787;
+    font-size:12px;
+    opacity:0;
+    transition:opacity .15s ease;
+}
+.copy-toast.show{
+    opacity:1;
+}
+
+.transform-copy{
+  width:100%;
+  margin-top:18px;
+  height:44px;
+  border:1px solid rgba(0,255,80,.65);
+  border-radius:7px;
+  background:#242830;
+  color:#c9ced6;
+  font:inherit;
+  cursor:pointer;
+  transition:.15s ease;
+  box-shadow:0 0 0 1px rgba(0,255,80,.10);
+}
+.transform-copy:hover{
+  background:#2b3038;
+  border-color:rgba(0,255,80,.95);
+  box-shadow:0 0 12px rgba(0,255,80,.14);
+  color:#e1e5ea;
+}
+.transform-copy:active{transform:translateY(1px)}

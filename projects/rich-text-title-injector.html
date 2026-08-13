@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rich Text Title Injector — Level Engineering Suite</title>
+<link rel="stylesheet" href="rich-text-title-injector.css">
+</head>
+<body>
+<main class="rt-page">
+  <header class="rt-head">
+    <div>
+      <p class="eyebrow">LEVEL ENGINEERING SUITE / NV3</p>
+      <h1>Rich Text Style</h1>
+    </div>
+    <a href="../index.html">← Back</a>
+  </header>
+
+  <section class="rt-panel">
+    <label for="levelName">Custom level name:</label>
+    <input id="levelName" type="text" placeholder="Type your text here..." autocomplete="off">
+
+    <h2>Inject Rich Text title</h2>
+    <div class="editor-toolbar" aria-label="Rich text tags">
+      <button type="button" data-tag="b">Bold</button>
+      <button type="button" data-tag="i">Italic</button>
+      <button type="button" data-tag="u">Underline</button>
+      <button type="button" data-tag="s">Strike</button>
+      <button type="button" data-tag="sup">Sup</button>
+      <button type="button" data-tag="sub">Sub</button>
+      <button type="button" data-tag="align">Align</button>
+    </div>
+
+    <div id="richEditor" class="rich-editor" contenteditable="true" spellcheck="false"
+         aria-label="Rich text title editor"></div>
+
+    <div class="base64-note">Input Base 64 coming soon</div>
+    <button id="generateInject" class="generate-button" type="button">Generate/Inject text style</button>
+    <div id="successMessage" class="success-message" role="status" aria-live="polite"></div>
+  </section>
+</main>
+<script src="rich-text-title-injector.js"></script>
+</body>
+</html>

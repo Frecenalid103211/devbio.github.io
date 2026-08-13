@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Outside the Walls — Level Engineering Suite</title>
+<link rel="stylesheet" href="outside-the-walls.css">
+</head>
+<body>
+<main class="ow-page">
+  <header class="ow-head">
+    <div>
+      <p class="eyebrow">LEVEL ENGINEERING SUITE / NV4</p>
+      <h1>Outside the Walls</h1>
+      <p>Place an object inside the map and copy the layout.</p>
+    </div>
+    <a href="../index.html">← Back</a>
+  </header>
+  <section class="ow-layout">
+    <aside class="ow-controls">
+      <label for="objectType">Select the type of object</label>
+      <select id="objectType"></select>
+      <label for="mapLocation">Select the map location</label>
+      <select id="mapLocation">
+        <option value="center-left">Center left</option>
+        <option value="top-left">Top left</option>
+        <option value="bottom-left">Bottom left</option>
+        <option value="bottom-center">Bottom center</option>
+        <option value="bottom-right">Bottom right</option>
+        <option value="center-right">Center right</option>
+        <option value="top-right">Top right</option>
+        <option value="top-center">Top center</option>
+      </select>
+      <label for="baseShape">Base shape</label>
+      <select id="baseShape">
+        <option value="square">Square</option>
+        <option value="circle">Circle</option>
+        <option value="triangle">Triangle</option>
+      </select>
+      <button id="generateCode" class="generate">Generate the code</button>
+      <div id="copyMessage" class="copy-message" role="status" aria-live="polite"></div>
+    </aside>
+    <section class="ow-preview">
+      <div class="preview-title">
+        <span>Map layout</span>
+        <span id="positionReadout">center left</span>
+      </div>
+      <canvas id="mapCanvas" width="1100" height="700"></canvas>
+      <p class="hint">The diagonal area is outside the map. The dark grid is inside the map. Drag the object in 1/4-grid steps.</p>
+    </section>
+  </section>
+</main>
+<script>
+window.NV4_OBJECTS=["Wall_Square_Small","Wall_Square","Wall_Plank_Tiny","Wall_Plank_Small","Wall_Plank","Wall_Angle_Small","Wall_Angle","Wall_Circle_Small","Wall_Circle","Ice_Square_Small","Ice_Square","Ice_Plank_Tiny","Ice_Plank_Small","Ice_Plank","Ice_Angle_Small","Ice_Angle","Ice_Circle_Small","Ice_Circle","Rough_Square_Small","Rough_Square","Rough_Plank_Tiny","Rough_Plank_Small","Rough_Plank","Rough_Angle_Small","Rough_Angle","Rough_Circle_Small","Rough_Circle","Bouncy_Square_Small","Bouncy_Square","Bouncy_Plank_Tiny","Bouncy_Plank_Small","Bouncy_Plank","Bouncy_Angle_Small","Bouncy_Angle","Bouncy_Circle_Small","Bouncy_Circle","DT_Square_Small","DT_Square","DT_Plank_Tiny","DT_Plank_Small","DT_Plank","DT_Angle_Small","DT_Angle","DT_Circle_Small","DT_Circle","NoDraw_Square_Tiny","NoDraw_Square_Small","NoDraw_Square","Water_Square_Tiny","Water_Square_Small","Water_Square","Magnet_Square","MagnetN_Square","Ball_Orange_Small","Ball_Orange","Ball_Orange_Large","Ball_Yellow_Small","Ball_Yellow","Ball_Yellow_Large","Ball_Moveable_Small","Ball_Moveable","Ball_Moveable_Large","Ball_Red_Small","Ball_Red","Ball_Red_Large","Ball_Bouncy_Small","Ball_Bouncy","Ball_Bouncy_Large","Ball_Rough_Small","Ball_Rough","Ball_Rough_Large","Ball_Ice_Small","Ball_Ice","Ball_Ice_Large","Ball_DT_Small","Ball_DT","Ball_DT_Large","Moveable_Plank_10","Moveable_Plank_20","Wall_Button","Wall_Button2","Wall_Gate","Wall_Fan_Small","Gear_1","Gear_2","Gear_3","Gear_4","Gear_5","Gear_6","Gear_7","Gear_8"];
+</script>
+<script src="outside-the-walls.js"></script>
+</body>
+</html>

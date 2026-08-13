@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Art Studio</title>
+<link rel="stylesheet" href="live-art-studio.css">
+</head>
+<body>
+<div class="studio">
+
+    <div class="topbar">
+        <div>
+            <div class="eyebrow">CREATE / LIVE ART STUDIO</div>
+            <h1>Live Art Studio</h1>
+        </div>
+        <button id="deployArt">Deploy art to level</button>
+    </div>
+
+    <div class="studio-main">
+        <section class="workspace">
+            <div class="toolbar">
+                <div class="grid-control">
+                    <span>Grid size</span>
+                    <select id="gridSize">
+                        <option value="40">40 × 40</option>
+                        <option value="75">75 × 75</option>
+                        <option value="100">100 × 100</option>
+                        <option value="150">150 × 150</option>
+                        <option value="200">200 × 200</option>
+                    </select>
+                </div>
+
+                <button class="tool active" id="pencil">✎ Pencil</button>
+                <button class="tool" id="eraser">⌫ Eraser</button>
+
+                <label class="import-button">
+                    Import canvas
+                    <input type="file" id="importCanvas" accept="image/*">
+                </label>
+
+                <button class="tool clear-tool" id="clearCanvas" type="button">
+                    Clear Canvas
+                </button>
+                <button class="tool" id="toggleGrid" type="button">
+                    Grid: On
+                </button>
+            </div>
+
+            <div class="canvas-area">
+                <canvas id="artCanvas" width="800" height="800"></canvas>
+            </div>
+
+            <div class="canvas-info">
+                <span id="resolution">40 × 40 pixels</span>
+                <span id="pixelPosition">Pixel: —</span>
+            </div>
+        </section>
+
+        <aside class="materials">
+            <h2>Materials</h2>
+            <p class="materials-description">
+                Choose a material, then use Pencil to draw it.
+            </p>
+
+            <div class="material-section">
+                <h3>Materials / Colors</h3>
+                <div class="material-grid">
+                    <button class="material selected" data-name="Blue" data-color="#17447F" style="background:#17447F" aria-label="Blue"></button>
+                    <button class="material" data-name="Green" data-color="#00C800" style="background:#00C800" aria-label="Green"></button>
+                    <button class="material" data-name="Cyan" data-color="#00C8C8" style="background:#00C8C8" aria-label="Cyan"></button>
+                    <button class="material" data-name="Magenta" data-color="#C800C8" style="background:#C800C8" aria-label="Magenta"></button>
+                    <button class="material" data-name="Gray" data-color="#6D6E65" style="background:#6D6E65" aria-label="Gray"></button>
+                    <button class="material" data-name="Red" data-color="#BC0000" style="background:#BC0000" aria-label="Red"></button>
+                    <button class="material" data-name="Plus" data-color="#498FE0" style="background:#498FE0" aria-label="Plus wall"></button>
+                    <button class="material" data-name="Minus" data-color="#BC0000" style="background:#BC0000" aria-label="Minus wall"></button>
+                    <button class="material" data-name="Black" data-color="#000000" style="background:#000000" aria-label="Black"></button>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <div id="message"></div>
+</div>
+
+<script src="live-art-studio.js"></script>
+</body>
+</html>
